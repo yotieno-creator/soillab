@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SoilLab Professional</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="side">
+  <div class="brand">SoilLab <span>Professional</span></div>
+  <nav>
+    <a href="#dashboard" data-p="dashboard">Dashboard</a>
+    <a href="#projects" data-p="projects">Projects</a>
+    <a href="#samples" data-p="samples">Sample Register</a>
+    <a href="#tests" data-p="tests">Soil Tests</a>
+    <a href="#reports" data-p="reports">Reports</a>
+    <a href="#graphs" data-p="graphs">Graphs</a>
+    <a href="#settings" data-p="settings">Settings &amp; Data</a>
+  </nav>
+</aside>
+<div id="main">
+  <header>
+    <button id="menu" aria-label="Menu">☰</button>
+    <div><h1 id="title"></h1><small id="crumb"></small></div>
+    <input id="gs" aria-label="Global search" placeholder="Search projects, samples, tests…" style="max-width:240px">
+    <button id="theme" class="btn ghost">Light / Dark</button>
+  </header>
+  <main id="view"></main>
+</div>
+<dialog id="dlg"></dialog>
+<div id="toast"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
